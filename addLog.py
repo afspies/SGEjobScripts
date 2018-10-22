@@ -17,5 +17,15 @@ logEntry += "Started by:    " + pwd.getpwuid(os.getuid())[0] + "\n"
 logEntry += "Started on:    " + \
             dt.datetime.now().strftime("%d/%m/%y %H:%M") + "\n"
 
-with open("~/jobs.log", "a") as f:
+
+logPath = os.path.expanduser("~") + "/jobs.log"
+
+# Check that log file exists, if not then create it
+if not os.path.isfile(logPath):
+    with open(logPath, "w") as f:
+        f.write("""-- Job Log File --\n
+                Generated on """ + dt.datetime.now().strftime("%d/%m/%y") + """
+                ******************************************************""")
+
+with open(logPath, "a") as f:
     f.write(logEntry)
