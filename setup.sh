@@ -5,4 +5,4 @@ mv ./addLog.py ~/submit/
 mv ./submit.sh ~/submit/
 
 # Self-destruct
-rm -r ../SGEjobScripts
+rm -r -f ../SGEjobScripts
