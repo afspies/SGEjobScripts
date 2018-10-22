@@ -23,9 +23,9 @@ logPath = os.path.expanduser("~") + "/jobs.log"
 # Check that log file exists, if not then create it
 if not os.path.isfile(logPath):
     with open(logPath, "w") as f:
-        f.write("""-- Job Log File --\n
-                Generated on """ + dt.datetime.now().strftime("%d/%m/%y") + """
-                ******************************************************\n""")
+        f.write("-- Job Log File --\n" +
+                "Generated on """ + dt.datetime.now().strftime("%d/%m/%y") + "\n" +
+                "******************************************************\n")
 
 with open(logPath, "a") as f:
     f.write(logEntry)
