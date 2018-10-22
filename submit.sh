@@ -9,5 +9,5 @@ else # Default email
 fi
 
 # Add  job info to log
-python addLog.py $1
+python ~/submit/addLog.py $1
 
