@@ -25,7 +25,7 @@ if not os.path.isfile(logPath):
     with open(logPath, "w") as f:
         f.write("""-- Job Log File --\n
                 Generated on """ + dt.datetime.now().strftime("%d/%m/%y") + """
-                ******************************************************""")
+                ******************************************************\n""")
 
 with open(logPath, "a") as f:
     f.write(logEntry)
