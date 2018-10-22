@@ -17,5 +17,5 @@ logEntry += "Started by:    " + pwd.getpwuid(os.getuid())[0] + "\n"
 logEntry += "Started on:    " + \
             dt.datetime.now().strftime("%d/%m/%y %H:%M") + "\n"
 
-with open("../jobs.log", "a") as f:
+with open("~/jobs.log", "a") as f:
     f.write(logEntry)
