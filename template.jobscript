@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# ----------------------------
+# - Set SGE settings -
+#$ -V
+#$ -cwd
+# ----------------------------
+
+# Run desired programmes below
+
+# For example:
+python test.py # Note - pay attention to paths
+
+

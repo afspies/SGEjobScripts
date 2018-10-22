@@ -10,3 +10,6 @@ rm ~/submit/README.md
 
 # Delete this script
 rm ~/submit/setup.sh
+
+# Put template jobscript in the jobscripts folder
+mv ~/submit/template.jobscript ~/jobscripts/
